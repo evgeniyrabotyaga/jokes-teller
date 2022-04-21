@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/gif.gif');
+  background-size: 10rem;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.container-1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8rem;
+  background-color: rgb(255, 251, 0);
+  padding: 0.5rem 8rem;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  filter: brightness(50%);
+}
+
+.btn:disabled {
+  color: rgba(0, 0, 0, 0.2);
+  filter: brightness(50%);
+}
